@@ -49,4 +49,12 @@ class Cliente(private var nome: String) {
         println()
     }
 
+    fun totalItens(): Int{
+        return listCompras.size
+    }
+
+    fun verificarItem(item: String): Boolean{
+        return listCompras.contains(item)
+    }
+
 }
